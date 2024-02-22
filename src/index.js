@@ -1,11 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-ReactDOM.render(
+// ReactDOM.render(
+//   <div>
+//     <App />
+//   </div>,
+//   document.getElementById('root')
+// );
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
     <App />
-  </div>,
-  document.getElementById('root')
+  </div>
 );

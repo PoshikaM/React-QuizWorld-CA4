@@ -1,13 +1,265 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* for the result page content */
+.modalpopup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4A0078;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.modalcontent {
+  padding: 50px 150px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
 }
+
+.restart{
+  background-color: #089106;
+}
+
+/* to set the color and background color according to theme */
+#lite{
+  background-color:#fff;
+  color: #272727;
+}
+#drk{
+  background-color: #272727;
+  color: white;
+}
+/* for the result page content */
+
+
+/* main page content's style */
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #4A0078;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* stylings according to the theme */
+.darktheme {
+  background-color: #272727;
+  color: #fff;
+}
+.lighttheme {
+  background-color: #fff;
+  color: #272727;
+}
+/* stylings according to the theme */
+
+
+/* stylings according to the theme for buttons */
+.btndarktheme{
+  background-color: #333;
+  color: white;
+}
+.btnlighttheme{
+  background-color: #d8d7d7;
+  color: #272727;
+}
+/* stylings according to the theme for buttons */
+
+
+/* for the whole div */
+#container{
+  height: 100%;
+}
+#entirePage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  padding: 40px 0px 40px 0px;
+  border-radius: 10px;
+}
+/* for the whole div */
+
+
+/* for theme button */
+.mode{
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+}
+
+h3{
+  margin-bottom: 50px;
+}
+img{
+  width: 80px;
+}
+
+/* for logo and quiz title */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+} 
+
+/* for all buttons */
+button{
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 400;
+  font-size:medium;
+}
+
+/* for option buttons */
+.btns1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 50px;
+  column-gap: 200px;
+}
+
+/* for highlight and remove highlight buttons */
+.btns3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+#highlight, #removehigh{
+  background-color: #1b30e5;
+  margin-top: 30px;
+}
+/* for highlight and remove highlight buttons */
+
+
+/* style according to theme */
+.litthe{
+  color: black;
+}
+.darkthe{
+  color: white;
+}
+/* style according to theme */
+
+
+/* for responsive */
+@media (max-width: 1070px){
+  #entirePage{
+    flex-direction: column;
+    max-width: 700px;
+  }
+  #container{
+    flex-direction: column;
+  }
+}
+
+/* tab responsive */
+@media (max-width: 750px){
+  #entirePage{
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .btns1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+  .modalcontent {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 550px){
+  #entirePage{
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .btns1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .btns3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+  }
+  #entirePage{
+    padding: 20px 0px;
+    margin: 50px;
+  }
+  .modalcontent {
+    padding: 70px;
+  }
+}
+/* tab responsive */
+
+
+/* mobile responsive */
+@media (max-width: 460px){
+  #entirePage{
+    flex-direction: column;
+    max-width: 290px;
+  }
+  #container{
+    flex-direction: column;
+  }
+  .btns1{
+    row-gap: 10px;
+  }
+  .btns3{
+    row-gap: 0px;
+  }
+  #entirePage{
+    padding: 20px 0px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .modalcontent {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 320px){
+  #entirePage{
+    flex-direction: column;
+    max-width: 240px;
+  }
+  .btns1{
+    row-gap: 10px;
+  }
+  .btns3{
+    row-gap: 0px;
+  }
+  #entirePage{
+    padding: 20px 0px;
+    margin: 50px;
+  }
+  .header{
+    gap: 0px;
+    padding-left: 10px;
+  }
+  .modalcontent {
+    padding: 10px;
+  }
+}
+/* mobile responsive */

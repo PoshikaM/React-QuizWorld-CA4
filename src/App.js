@@ -4,13 +4,12 @@ import questions from "./questions";
 import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 
-
-
 function App() {
 
   return (
     <div>
-      
+      <QuestionBox/>
+      {/* <Result/> */}
     </div>
   );
 }

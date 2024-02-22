@@ -5,12 +5,17 @@ import Result from './Result';
 
 function QuestionBox(){
 
+  // to go to next question
   const [count, setCount] = useState(0)
+  // to set theme
   const [theme, setTheme] = useState(false)
+  // to highlight question
   const [highlight, sethighlight] = useState('green')
+  // for score to increase
   const [score, setScore] = useState(0)
+  // to check if quiz is completed
   const [quizCompleted, setQuizCompleted] = useState(false);
-
+  
   // to change the theme 
   const togglTheme = () => {
     setTheme((prevTheme) => !prevTheme)
